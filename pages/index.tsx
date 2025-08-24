@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>ShopZone - Stylish Products</title>
+        <title>JaguaShop - Stylish Products</title>
       </Head>
 
       <main className="max-w-7xl mx-auto px-6 py-12">
