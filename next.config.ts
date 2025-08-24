@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 module.exports = {
   reactStrictMode: true,
   experimental: {
-    appDir: true,
+    
   },
   env: {
     NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: 'pk_test_bWFueS1yaGluby00Ny5jbGVyay5hY2NvdW50cy5kZXYk',

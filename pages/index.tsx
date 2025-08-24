@@ -19,14 +19,14 @@ export default function Home() {
         </h1>
 
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-          {products.map(({ id, name, description, price, imageUrl }) => (
+          {products.map(({ id, name, description, price, image }) => (
   <div
     key={id}
     className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
   >
     <Link href={`/products/${id}`}>
   
-    <img src={imageUrl} alt={name} className="object-cover w-full h-64" />
+    <img src={image} alt={name} className="object-cover w-full h-64" />
     <h2 className="text-2xl font-semibold mb-2 mt-4">{name}</h2>
   
 </Link>
@@ -38,7 +38,7 @@ export default function Home() {
         <span className="text-xl font-bold text-green-700">${price.toFixed(2)}</span>
         <button
           onClick={() =>
-            addToCart({ id, name, description, price, imageUrl,})
+            addToCart({ id, name, description, price, image,})
           }
           className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition"
         >
