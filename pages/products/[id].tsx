@@ -36,7 +36,7 @@ export default function ProductDetails() {
           {/* Image */}
           <div className="flex-1">
             <img
-              src={product.imageUrl}
+              src={product.image}
               alt={product.name}
               className="rounded-lg object-cover w-full max-h-[400px]"
             />
@@ -54,7 +54,7 @@ export default function ProductDetails() {
 
             <button
               onClick={() =>
-                addToCart({ id: product.id, name: product.name, price: product.price, description: product.description, imageUrl: product.imageUrl, })
+                addToCart({ id: product.id, name: product.name, price: product.price, description: product.description, image: product.image, })
               }
               className="px-6 py-3 bg-green-600 text-white font-semibold rounded hover:bg-green-700 transition"
             >
