@@ -1,10 +1,10 @@
 import { useCart } from '../context/cartcontext';
-import { useRouter } from 'next/router';
-import Head from 'next/head';
+// import { useRouter } from 'next/router';
+// import Head from 'next/head';
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
-import { products } from '@/data/products';
-import { describe } from 'node:test';
+// import { useState, useEffect } from 'react';
+// import { products } from '@/data/products';
+// import { describe } from 'node:test';
 
 // Dummy suggested products (replace with real fetch if needed)
 const suggestedProducts = [

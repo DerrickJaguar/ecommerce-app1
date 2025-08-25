@@ -13,11 +13,11 @@ import {
 } from '@clerk/nextjs';
 
 import { CartProvider } from '../context/cartcontext';
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/router';
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const { pathname } = useRouter();
+  // const { pathname } = useRouter();
 
   return (
     <ClerkProvider {...pageProps}>
